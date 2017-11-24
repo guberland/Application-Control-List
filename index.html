@@ -4,7 +4,7 @@
         <title>Fortinet Application Control List</title>
         <meta name="viewport" content="initial-scale=1.0">
         <meta charset="utf-8">
-
+        <link href="css/style.css" rel="stylesheet" type="text/css">
 
     </head>
     <body>
@@ -14,9 +14,9 @@
 <!--         <div id="wrapper">
             <div id="sidebar-wrapper" >
                 <ul class="sidebar-nav">
-                    <div data-bind='template: { foreach: locations}' class="sidebar-nav">
+                    <div data-bind='template: { foreach: datalist}' class="sidebar-nav">
                         <li>
-                            <button class="locations" data-bind=' text: name, click:name,click :$parent.centerMarker'>
+                            <button class="locations" data-bind=' text: [
                             </button>
                         </li>
                     </div>
@@ -25,10 +25,11 @@
 
             <input type="search" id="search-bar" placeholder="Enter a name" data-bind="value:query,valueUpdate: 'keyup'">
         </div> -->
+        <div id = "list"></div>
             <main></main>
 
 
-        <script src="js/knockout-3.4.2.js"></script>
+
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/app.js"></script>
     </body>
