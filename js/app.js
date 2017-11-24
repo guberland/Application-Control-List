@@ -3,8 +3,13 @@
 // var my data;
 
 var getData = function (){
+<<<<<<< HEAD
     var theURL = "http://jobs.fortinet.com/test.json"
     var namelist=[];
+=======
+    var theURL = "https://github.com/guberland/Application-Control-List/blob/master/test.json"
+
+>>>>>>> origin/master
      $.get(theURL, function( my_var ) {
     new_var = my_var.substring(0,my_var.length-1);
     var parsed_data = JSON.parse( new_var);
@@ -29,6 +34,7 @@ window.onload = getData;
 
 
 
+<<<<<<< HEAD
 var ViewModel = function() {
     var self = this;
 
@@ -51,3 +57,7 @@ var ViewModel = function() {
 
 var viewModel = new ViewModel();
 ko.applyBindings(viewModel);
+=======
+// var viewModel = new ViewModel();
+// ko.applyBindings(viewModel);
+>>>>>>> origin/master
