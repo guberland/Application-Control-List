@@ -1,5 +1,5 @@
 
-// var theURL = "http://jobs.fortinet.com/test.json"
+// var theURL = "https://jobs.fortinet.com/test.json"
 // var my data;
 var my_data;
 
