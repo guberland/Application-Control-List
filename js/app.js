@@ -1,39 +1,53 @@
 
 // var theURL = "http://jobs.fortinet.com/test.json"
 // var my data;
-var my_data;
 
 var getData = function (){
-    var theURL = "/test.json"
-
+    var theURL = "http://jobs.fortinet.com/test.json"
+    var namelist=[];
      $.get(theURL, function( my_var ) {
     new_var = my_var.substring(0,my_var.length-1);
-    my_data = JSON.parse( new_var);
-    console.log(my_data);
-    // normalizeJSON(my_data);
-    $.each(my_data,function(i,app){
-        $('#list').append('<h3>'+my_data[i][0]+'</h3>');
-    })
+    var parsed_data = JSON.parse( new_var);
 
+    viewModel.datalist(parsed_data);
+
+    $.each(parsed_data,function(i,app){
+        namelist.push(parsed_data[i][0]);
+
+    })
+    console.log(namelist);
+
+    viewModel.names(namelist);
 }, 'text');     //data from to another place in the load
 };
 
 window.onload = getData;
 
-// var normalizeJSON = function(data){
-//     for each
-// }
 
 
-console.log(my_data);
 
 
-// var ViewModel = function() {
-//      var self = this;
-//      console.log("hi");
-//      this.datalist = ko.observableArray(my_data);
 
-// }
 
-// var viewModel = new ViewModel();
-// ko.applyBindings(viewModel);
+var ViewModel = function() {
+    var self = this;
+
+    this.datalist = ko.observableArray();
+    self.names = ko.observableArray([]);
+    this.query = ko.observable('');
+
+    self.query = ko.observable('');
+
+    self.filteredNames = ko.pureComputed(function(){
+        return self.names().filter(function(item) {
+            return item.toLowerCase().indexOf(self.query().toLowerCase()) >= 0;
+        });
+    });
+
+
+
+
+}
+
+var viewModel = new ViewModel();
+ko.applyBindings(viewModel);
