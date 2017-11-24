@@ -4,7 +4,7 @@
 var my_data;
 
 var getData = function (){
-    var theURL = "/test.json"
+    var theURL = "https://github.com/guberland/Application-Control-List/blob/master/test.json"
 
      $.get(theURL, function( my_var ) {
     new_var = my_var.substring(0,my_var.length-1);
