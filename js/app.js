@@ -20,11 +20,11 @@ var getData = function (){
         return {
             app_name:i[0],
             app_type:i[1],
-            number_col1:i[2],
-            number_col2:i[3],
-            number_col3:i[4],
+            user_permission:i[2],
+            group_permission:i[3],
+            other_permission:i[4],
             date:i[5],
-            register_name:i[6],
+            company:i[6],
             website:i[7],
             ctrl_reason:i[8],
             explanation:i[9],
@@ -60,7 +60,25 @@ window.onload = getData;
 
 
     var populateContent = function(i){
-        return '<h3>'+i.app_name+'</h3>';
+        return '<h1 id="app-title">'+i.app_name+'</h1>'+'<hr>'
+              +'<h2 id="app-fullname">'+i.app_fullname+'</h2>'
+              +'<h3 id="app-register_name">'+"Company: "+i.company+'</h3>'
+              +'<h3 id="app-date">'+"Registered Date: "+i.date+'</h3>'
+              +'<h3 id="app-type">'+"Category: "+i.app_type+'</h3>'+'<br>'
+              +'<h3 id="app-URL"><p>&ensp;'+i.explanation+'</p></h3>'
+              +'<h3 id="ctrl">'+i.ctrl_reason+'</h3>'
+
+              +'<h2 id="app-action">'+i.action+'</h2>'
+
+              +'<h3 id="app-website">'+i.website+'</h3>'
+              +'<h2 id="app-policy">'+i.policy_number+'</h2>'
+              +'<h3 id="app-policy">'+i.unknown_col+'</h3>'
+              +'<h3 id="app-policy">'+i.number_col4+'</h3>'
+              +'<h3 id="app-policy">'+i.number_col5+'</h3>'
+              +'<h4 id="app-policy">'+"User permission: "+i.user_permission+'</h4>'
+              +'<h4 id="app-policy">'+"Group permission: "+i.group_permission+'</h4>'
+              +'<h4 id="app-policy">'+"Other permission: "+i.other_permission+'</h4>'
+              +'<h3 id="app-policy">'+i.URL+'</h3>'
      }
 
 
