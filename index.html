@@ -4,24 +4,40 @@
         <title>Fortinet Application Control List</title>
         <meta name="viewport" content="initial-scale=1.0">
         <meta charset="utf-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
 
     </head>
     <body>
-        <header>
-            <h1 id="title">Fortinet Application Control List</h1>
-        </header>
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-12" >
+                    <header>
+                        <h1 id="title">Fortinet Application Control List</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-md-12" id="search-bar" >
+                <input type="search" placeholder="Enter a name" data-bind="value:query,valueUpdate: 'keyup'">
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-md-4" id="list_container" >
+                <ul id = "list" data-bind='foreach: filteredNames'>
 
-<input type="search" id="search-bar" placeholder="Enter a name" data-bind="value:query,valueUpdate: 'keyup'">
-<ul id = "list" data-bind='foreach: filteredNames'>
-
-                            <li>
-                            <button data-bind=' text: $data'>
-                            </button>
-                        </li>
-                    </ul>
-                    <div id="content" data-bind='filteredNames'></div>
-                </body>
+                                            <li>
+                                            <button data-bind=' text: $data'>
+                                            </button>
+                                        </li>
+                                    </ul>
+                </div>
+                <div class="col-md-8" >
+                             <div id="content"></div>
+                </div>
+            </div>
+        </div>
+    </body>
 
 
 

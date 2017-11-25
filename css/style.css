@@ -1,13 +1,35 @@
 #list{
-    height:900px; width:27%;
+    height:900px; width:100%;
     overflow:hidden; overflow-y:scroll;
     font-size: 20px;
+    flex-wrap: wrap;
     }
 
 #title{
     text-align: center;
 }
 
+.container{
+
+    margin:0 auto;
+    flex-wrap: wrap;
+}
+
+/*#list_container{
+    margin:0 auto;
+    flex-wrap: wrap;
+}*/
+
+#content {
+    margin: 20px 20px 10px 20px;
+
+    flex-wrap: wrap;
+}
+#search-bar {
+        margin: 20px 20px 10px 100px;
+
+        flex-wrap: wrap;
+}
 
 
 /*#wrapper {
