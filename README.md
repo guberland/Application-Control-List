@@ -1,6 +1,7 @@
 # Application-Control-List
 
 This is a small single page app built with KnockoutJs that provide live search and display content of the source data 
+
 <a href="url"><img src="./screenshot/screenshot1.png" align="left" height="600px" width="700px" ></a>
 
 ## What is in the app
