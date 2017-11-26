@@ -1,6 +1,6 @@
 # Application-Control-List
 
-This is a small single page app built with KnockoutJs that provide live search and display content of the source data 
+This is a small single page app built with KnockoutJs that provide live search and display content of the source data, minimal functional CSS is used. 
 
 
 ## What is in the app
