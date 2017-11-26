@@ -1,8 +1,8 @@
 use strict;
 //function that runs on window load that retrieve and parse data
 var getData = function (){
-    // var theURL = "http://jobs.fortinet.com/test.json";
     // the value of theURL is changed for github display purpose
+    // var theURL = "http://jobs.fortinet.com/test.json";
     var theURL = "./test.json";
     var namelist=[];
 
@@ -39,7 +39,7 @@ var getData = function (){
 
         viewModel.names(namelist);
         viewModel.datalist(parsed_JSON);
-    }, 'text');
+    }, "text");
 };
 
 
@@ -49,7 +49,7 @@ window.onload = getData;
 $("ul").on("click","button",function(){
     var name = this.innerHTML;
 
-    $("#content").css('border','1px solid black');
+    $("#content").css("border","1px solid black");
     for (var x of viewModel.datalist()){
         if ( name == x.app_name)
         $("#content").html(populateContent(x));
@@ -58,20 +58,20 @@ $("ul").on("click","button",function(){
 
 
     var populateContent = function(i){
-        return '<h1 id="app-title">' + i.app_fullname + '</h1>' + '<hr>'
-              + '<h3><div id="app-fullname">' + i.app_name
-              + '<div id="app-date">' + "Registered Date: " + i.date + '</h3>'
-              + '<h3 id="app-type">' + "Category: " + i.app_type + '</h3>'
-              + '<h3 id="app-register_name">' + "Company: " + i.company+'</h3>'
-              + '<h3 id="app-URL">' + i.URL+'</h3>'+'<hr>'
-              + '<h3 id="ctrl">' + "Control Reason: " + i.ctrl_reason + '</h3>'
-              + '<h3 id="app-URL">' + "Explanation:<p>" + i.explanation + '</p></h3>'
-              + '<h3 id="app-action">' + "Available Action: " + i.action + '</h3><br><hr>'
-              + '<h4 id="app-policy">' + "User Permission: " + i.user_permission
+        return "<h1 id='app-title'>" + i.app_fullname + "</h1>" + "<hr>"
+              + "<h3><div id='app-fullname'>" + i.app_name
+              + "<div id='app-date'>" + "Registered Date: " + i.date + "</h3>"
+              + "<h3 id='app-type'>" + "Category: " + i.app_type + "</h3>"
+              + "<h3 id='app-register_name'>" + "Company: " + i.company+"</h3>"
+              + "<h3 id='app-URL'>" + i.URL+"</h3>"+"<hr>"
+              + "<h3 id='ctrl'>" + "Control Reason: " + i.ctrl_reason + "</h3>"
+              + "<h3 id='app-URL'>" + "Explanation:<p>" + i.explanation + "</p></h3>"
+              + "<h3 id='app-action'>" + "Available Action: " + i.action + "</h3><br><hr>"
+              + "<h4 id='app-policy'>" + "User Permission: " + i.user_permission
               + ", Group Permission: " + i.group_permission
-              + ", Other Permission: " + i.other_permission + '</h4>'
-              + '<h4 id="app-website">' + i.website + '</h4>'
-              + '<h4 id="cate-code">' + "Category Code: " + i.category_code + '</h4>';
+              + ", Other Permission: " + i.other_permission + "</h4>"
+              + "<h4 id='app-website'>" + i.website + "</h4>"
+              + "<h4 id='cate-code'>" + "Category Code: " + i.category_code + "</h4>";
               //hidden data due to unknown usage
               // +'<h3 id="app-policy">'+i.unknown_col+'</h3>'
               // +'<h3 id="app-policy">'+i.number_col4+'</h3>'
@@ -83,7 +83,7 @@ var ViewModel = function() {
     var self = this;
     self.datalist = ko.observableArray();
     self.names = ko.observableArray([]);
-    self.query = ko.observable('');
+    self.query = ko.observable("");
 
     self.filteredNames = ko.pureComputed(function(){
         return self.names().filter(function(item) {
