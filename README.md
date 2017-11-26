@@ -17,10 +17,12 @@ js/
 	-jquery-3.2.1.min.js
 	-knockout-3.4.2.js
 
+test.json
+
 README.md
 ## Framework/Library used
 
-  CSS:bootstrap
+  CSS: bootstrap
   
   JS: KnockoutJs, Jquery
 ## How to run the project
