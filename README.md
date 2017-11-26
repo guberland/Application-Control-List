@@ -21,9 +21,8 @@ test.json
 
 README.md
 ## Framework/Library used
-
-  CSS: bootstrap
-  
+  CSS: bootstrap
+	
   JS: KnockoutJs, Jquery
 ## How to run the project
 
