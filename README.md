@@ -2,7 +2,7 @@
 
 This is a small single page app built with KnockoutJs that provide live search and display content of the source data 
 
-<a href="url"><img src="./screenshot/screenshot1.png" align="left" height="600px" width="700px" ></a>
+<a href="url"><img src="./screenshot/screenshot1.png" align="left" height="700px" width="900px" ></a><br>
 
 ## What is in the app
 
