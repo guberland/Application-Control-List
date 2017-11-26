@@ -1,3 +1,4 @@
+use strict;
 //function that runs on window load that retrieve and parse data
 var getData = function (){
     // var theURL = "http://jobs.fortinet.com/test.json";
