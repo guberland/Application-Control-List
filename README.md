@@ -34,7 +34,7 @@ README.md
 
   
 ## Alteration for display purpose
-  -The URL has been changed to point at local file which is the duplicate of the source file for GitHub display purpose
+  -The URL has been changed to point at local file which is the duplicate of the source file for GitHub demo purpose
   
   -Some of the Information are hidden due to unknown usage
 
