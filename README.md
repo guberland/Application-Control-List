@@ -30,7 +30,9 @@ README.md
   or download the project using the following link:
   https://github.com/guberland/Application-Control-List
 
-2.open index.html with the browser of your choice.
+2.For local version, replace the var theURL with commented value in line 4 in app.js 
+
+3.open index.html with the browser of your choice.(Chrome user should install extension called:"Allow-Control-Allow-Origin")
 
   
 ## Alteration for display purpose
