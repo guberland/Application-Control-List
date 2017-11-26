@@ -18,9 +18,11 @@ js/
 	-knockout-3.4.2.js
 
 README.md
+## Framework/Library used
 
+  CSS:bootstrap
+  JS: KnockoutJs, Jquery
 ## How to run the project
-
 
 1.run the live sample here. https://guberland.github.io/Application-Control-List/
   or download the project using the following link:
