@@ -2,7 +2,7 @@
 
 This is a small single page app built with KnockoutJs that provide live search and display content of the source data 
 
-
+![alt text](./screenshot/screenshot1.png )
 ## What is in the app
 
 index.html
