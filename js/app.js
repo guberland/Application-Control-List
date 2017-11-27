@@ -1,4 +1,3 @@
-use strict;
 //function that runs on window load that retrieve and parse data
 var getData = function (){
     // the value of theURL is changed for github display purpose
